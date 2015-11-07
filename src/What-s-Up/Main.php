@@ -52,6 +52,8 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
       	}
       	if($lang == english){
       		$sender->sendMessage(TextFormat::BLUE . "[WHUP] Succesfully updated state!");
+      	}else{
+      	  $sender->sendMessage(TextFormat::GOLD . "No message has been made for this language");
       	}
       	return true;
       }
